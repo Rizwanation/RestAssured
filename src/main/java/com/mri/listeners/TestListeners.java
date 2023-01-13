@@ -53,7 +53,7 @@ public class TestListeners implements ITestListener, ISuiteListener {
         ExtentLogger.pass(result.getMethod().getMethodName() + " passed execution.");
         try {
             System.out.println("before sending call, success: "+testCaseId);
-            TestRailsManager.addResultForTestCase(testCaseId,TestRailsManager.TEST_CASE_FAILED_STATUS, "");
+            TestRailsManager.addResultForTestCase(testCaseId,TestRailsManager.TEST_CASE_PASSED_STATUS, "");
         } catch (IOException e) {
             throw new RuntimeException(e);
         } catch (APIException e) {
