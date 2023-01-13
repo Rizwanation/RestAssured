@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.mri.listeners.TestListeners"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="/Users/apple/RestAssured" parallel="methods" thread-count="1">
+        <classes>
+            <class name="com.tests.GetTests">
+                <methods>
+                    <include name="getEmployeeDetails"/>
+                </methods>
+            </class>
+            <class name="com.tests.PostTests">
+                <methods>
+                    <include name="postCallTest"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
