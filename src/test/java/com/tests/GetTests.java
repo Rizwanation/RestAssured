@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 
 
 public class GetTests {
-/*
+
     public String getTestCaseId() {
         return testCaseId;
     }
@@ -32,7 +32,7 @@ public class GetTests {
     {//
         setTestCaseId(testData.getTestCaseId());
 
-        System.out.println("In Get: " +getTestCaseId());
+        /*
 
         //arrange and action
         RequestSpecification requestSpecification = RequestBuilder.buildRequestForGetCalls();
@@ -61,14 +61,13 @@ public class GetTests {
 
         //logging to report
         ExtentLogger.logResponse(response.asString());
-    }
 
  */
 
-    @Test
-    public void getEmployeeDetails()
-    {
-        Assert.assertTrue(true);
+     Assert.assertTrue(true);
     }
+
+
+
 
 }

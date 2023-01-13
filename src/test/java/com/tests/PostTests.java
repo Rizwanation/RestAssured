@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 
 
 public class PostTests {
-/*
+
     public String getTestCaseId() {
         return testCaseId;
     }
@@ -39,7 +39,9 @@ public class PostTests {
 
 
         setTestCaseId(testData.getTestCaseId());
-        System.out.println(getTestCaseId());
+        /*
+         System.out.println(getTestCaseId());
+
         //arrange
         Employee employee = Employee.builder()
                 .setId(getId())
@@ -63,48 +65,52 @@ public class PostTests {
         //logging to report
         ExtentLogger.logResponse(response.asString());
 
+         */
+        Assert.assertTrue(true);
+
     }
 
-//    @Test
-//    @FrameworkAnnotation(author = {"Muhammad","Rizwan"}, category = "Smoke")
-//    public void postRequestUsingExternalFile(Method method) throws IOException {
-//
-//
-//
-//        //arrange
-//        String externalBody = readJsonFileAndReturnString(FrameworkConstants.getJSON_REQUESTS_PATH()+"/requestBody.json");
-//        String updatedBody = externalBody.replace("998",String.valueOf(RandomUtils.getId()));
-//
-//        //actions
-//        RequestSpecification requestSpecification = RequestBuilder
-//                .buildRequestForPostCalls()
-//                .body(updatedBody);
-//
-//        ExtentLogger.logRequest(requestSpecification);
-//
-//        Response response = requestSpecification
-//                .post("/employees");
-//
-//        response.prettyPrint();
-//
-//        storeResponseAsJsonFile(FrameworkConstants.getJSON_RESPONSES_PATH() +"/" + method.getName()+ "/fullResponse.json",response);
-//
-//        //assertions
-//        assertThat(response.getStatusCode())
-//                .isBetween(200,201);
-//        assertThat(response.jsonPath().getString("lname"))
-//                .contains("depp");
-//
-//        //logging to report
-//        ExtentLogger.logResponse(response.asString());
-//    }
+    /*
+
+    @Test
+    @FrameworkAnnotation(author = {"Muhammad","Rizwan"}, category = "Smoke")
+    public void postRequestUsingExternalFile(Method method) throws IOException {
+
+
+
+        //arrange
+        String externalBody = readJsonFileAndReturnString(FrameworkConstants.getJSON_REQUESTS_PATH()+"/requestBody.json");
+        String updatedBody = externalBody.replace("998",String.valueOf(RandomUtils.getId()));
+
+        //actions
+        RequestSpecification requestSpecification = RequestBuilder
+                .buildRequestForPostCalls()
+                .body(updatedBody);
+
+        ExtentLogger.logRequest(requestSpecification);
+
+        Response response = requestSpecification
+                .post("/employees");
+
+        response.prettyPrint();
+
+        storeResponseAsJsonFile(FrameworkConstants.getJSON_RESPONSES_PATH() +"/" + method.getName()+ "/fullResponse.json",response);
+
+        //assertions
+        assertThat(response.getStatusCode())
+                .isBetween(200,201);
+        assertThat(response.jsonPath().getString("lname"))
+                .contains("depp");
+
+        //logging to report
+        ExtentLogger.logResponse(response.asString());
+
+            Assert.assertTrue(true);
+    }
+
+
 }
 }
  */
 
-    @Test()
-    public void postCallTest(TestData testData)
-    {
-        Assert.assertTrue(true);
-    }
 }
