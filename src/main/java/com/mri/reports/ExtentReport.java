@@ -44,7 +44,7 @@ public final class ExtentReport {
     public static void publishReport() throws IOException {
         extentReport.flush();
         unload();
-        Desktop.getDesktop().browse(new File("index.html").toURI());
+       //Desktop.getDesktop().browse(new File("index.html").toURI());
     }
 
 
