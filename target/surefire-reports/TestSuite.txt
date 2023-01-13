@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 8.504 s <<< FAILURE! - in TestSuite
-com.tests.GetTests.getEmployeeDetails[TestData(testRunId=1, testCaseId=1, testCaseName=getEmployeeDetails)](1)  Time elapsed: 3.936 s  <<< FAILURE!
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 8.301 s <<< FAILURE! - in TestSuite
+com.tests.GetTests.getEmployeeDetails[TestData(testRunId=1, testCaseId=1, testCaseName=getEmployeeDetails)](1)  Time elapsed: 4.145 s  <<< FAILURE!
 java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.connect0(Native Method)
 	at java.base/sun.nio.ch.Net.connect(Net.java:579)
@@ -132,7 +132,7 @@ java.net.ConnectException: Connection refused
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 
-com.tests.PostTests.postCallTest[TestData(testRunId=1, testCaseId=2, testCaseName=postCallTest)](1)  Time elapsed: 1.294 s  <<< FAILURE!
+com.tests.PostTests.postCallTest[TestData(testRunId=1, testCaseId=2, testCaseName=postCallTest)](1)  Time elapsed: 1.311 s  <<< FAILURE!
 java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.connect0(Native Method)
 	at java.base/sun.nio.ch.Net.connect(Net.java:579)
